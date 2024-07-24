@@ -44,7 +44,7 @@ console.log(`Found: ${validMnemonics.length} valid mnemonics`);
 console.log(`Looking for address: ${process.env.FIND_ADDRESS}`);
 //for each mnemonic in the array, get the first address
 //and compare it to the johanAddress
-
+let nothingFound = true;
 console.log(`First, not using a password...`);
 
 for (let index = 0; index < validMnemonics.length; index++) {
@@ -53,6 +53,7 @@ for (let index = 0; index < validMnemonics.length; index++) {
   paths.forEach((path) => {
     const address = getSegwitAddress(root.derivePath(path));
     if (address === process.env.FIND_ADDRESS) {
+      nothingFound = false;
       console.log(`
         found!
         PATH: ${path}
@@ -71,6 +72,7 @@ for (let index = 0; index < passwords.length; index++) {
     paths.forEach((path) => {
       const address = getSegwitAddress(root.derivePath(path));
       if (address === process.env.FIND_ADDRESS) {
+        nothingFound = false;
         console.log(`
           found!
           PATH: ${path}
@@ -80,5 +82,8 @@ for (let index = 0; index < passwords.length; index++) {
     });
   }
 }
-
-console.log("done.");
+if (nothingFound) {
+  console.log("Nothing found. Done.");
+} else {
+  console.log("done.");
+}
