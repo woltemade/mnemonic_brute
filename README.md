@@ -1,6 +1,6 @@
 # mnemonic_brute
 
-Brute force find valid mnemonics knowing only one mnemonic word if 12th is wrong. Using Path and Password variables, it will generate the first address of each mnemonic and check if it is the same as the address supplied in .en file.
+Brute force find valid mnemonics knowing only one mnemonic word of 12th is wrong. Using Path and Password variables, it will generate the first address of each mnemonic and check if it is the same as the address supplied in .env file.
 
 ## Prerequisites
 
@@ -36,17 +36,25 @@ sudo apt update
 sudo apt install nodejs npm
 ```
 
+## Installing Git
+
+### Mac
+
+```
+brew install git
+```
+
 ## Setting Up the Project
 
 After installing Node.js and npm, follow these steps to set up the project:
 
 1. Clone the project repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/woltemade/mnemonic_brute.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd <project-name>
+   cd mnemonic_brute
    ```
 3. Install the project dependencies:
    ```bash
