@@ -8,7 +8,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "Brute force find valid mnemonics knowing only one mnemoic word is wrong",
+  "description": "Brute force find valid mnemonics knowing only one mnemonic word is wrong. Using Path and Password",
   "type": "module",
   "dependencies": {
     "bip32": "^4.0.0",
