@@ -8,13 +8,13 @@ Before you begin, ensure you have met the following requirements:
 
 - You have a `Windows`, `Linux` or `Mac` machine.
 
-## Installing Node.js
+## Installing Homebrew and Node.js
 
 This project requires Node.js to run. Follow these steps to install Node.js:
 
 ### Mac:
 
-in terminal run
+after installing homebrew package manager [https://brew.sh/](https://brew.sh/), in terminal run
 
 ```bash
 brew install node
