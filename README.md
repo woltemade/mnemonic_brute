@@ -46,7 +46,7 @@ brew install git
 
 ## Setting Up the Project
 
-After installing Node.js and npm, follow these steps to set up the project:
+After installing Node.js and npm, follow these steps to set up the project. In terminal:
 
 1. Clone the project repository:
    ```bash
@@ -61,7 +61,7 @@ After installing Node.js and npm, follow these steps to set up the project:
    npm install
    ```
 
-## Setting Parametrs
+## Setting Parameters
 
 Edit the .env file to set the parameters for the script.
 
@@ -71,14 +71,4 @@ To run the script, execute the following command in the project directory via te
 
 ```bash
 node index.js
-```
-
-Replace `<script-name>` with the name of the script you want to run.
-
-## Additional Information
-
-For more information on how to use the project, refer to the project documentation or contact the project maintainers.
-
-```
-
 ```
